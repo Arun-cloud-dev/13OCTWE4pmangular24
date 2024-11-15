@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+html
+{
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  background-color: rgb(124, 120, 120);
+}
+h1
+{
+  margin: 1rem auto;
+  font-size: 3rem;
+}

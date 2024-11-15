@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular02": {
+    "angular03": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular02",
+            "outputPath": "dist/angular03",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -22,7 +22,6 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/assets",
-              "src/favicon.ico",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular02:build:production"
+              "buildTarget": "angular03:build:production"
             },
             "development": {
-              "buildTarget": "angular02:build:development"
+              "buildTarget": "angular03:build:development"
             }
           },
           "defaultConfiguration": "development"

@@ -1,20 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { UserComponent } from './user/user.component';
-
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet, UserComponent],
-  // template:`<h1> arun teaches angular</h1>`,
-  // styles: ['h1 { color:red; background-color:yellow; border:2px solid green; }'],
+import { Component } from "@angular/core";
+import { HeaderComponent } from "./header/header.component";
 
 
 
+@Component ({
+  selector: 'app-root',//markup
+  standalone:true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
+  imports:[HeaderComponent,],
 
 })
-export class AppComponent {
-  title = 'angular02';
-}
+
+export class AppComponent{}
