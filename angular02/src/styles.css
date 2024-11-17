@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #ffcc00; /* Highlight active link */
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
