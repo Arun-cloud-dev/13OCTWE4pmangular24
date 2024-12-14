@@ -8,18 +8,11 @@
 
 
   <ul>
+   @for(task of selectedUsertasks; track task.id){
     <li>
-      <app-task />
+      <app-task (complete)="handleComplete($event)"/>
     </li>
-    <li>
-      <app-task />
-    </li>
-    <li>
-      <app-task />
-    </li>
-    <li>
-      <app-task />
-    </li>
+   }
   </ul>
 </section>
 

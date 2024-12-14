@@ -1,5 +1,6 @@
-import { Component , Input} from '@angular/core';
+import { Component , EventEmitter, Input, Output} from '@angular/core';
 import { TaskComponent } from "./task/task.component";
+
 
 @Component({
   selector: 'app-tasks',
@@ -10,5 +11,15 @@ import { TaskComponent } from "./task/task.component";
 })
 export class TasksComponent {
   @Input({required:true}) name!:string;
+
+
+  
+selectedUsertasks: any;
+
+  handleComplete(event : string){
+    console.log("Task Complete:", event);
+    //your own logic here
+
+  }
 
 }
