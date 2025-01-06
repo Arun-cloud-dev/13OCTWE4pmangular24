@@ -8,8 +8,9 @@ import { Component, Input, Output , EventEmitter} from '@angular/core';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-  
+
   @Output() complete = new EventEmitter<string>();
+  task: any;
 
 onComplete(){
   console.log("task complete");
